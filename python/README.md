@@ -4,3 +4,4 @@
 * [project 3 - treasure island](project%203%20-%20treasure%20map)
 * [project 4 - Rock Paper Scissors](project%204%20-%20Rock%20Paper%20Scissors)
 * [project 5 - Password generator](project%205%20-%20Password%20generator)
+* [project 6 - Escaping the Maze](project%206%20-%20Escaping%20the%20Maze)
