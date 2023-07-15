@@ -1,12 +1,55 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <meta http-equiv
-</head>
+<script>
+    var post1 = {
+        content: "This is my super post",
+        likes: 300,
+        shares: 20
+    }
+    var post2 = {
+        content: "This is my bit boring post",
+        likes: 10,
+        shares: 0
+    }
+
+    var post3 = {
+        content: "This is Mikesbala post",
+        likes: 1000000,
+        shares: 1110
+    }
+
+    var facebookUserOne = {
+        username: 'RobertinhoGameplays',
+        password: 'Supersenhamuitofoda',
+        email: '2050@example.com',
+        profileImage: 'foto-reference.jpg',
+        friends: ['Mike', 'Anna', 'Jenny'],
+        posts: [post1, post2]
+    }
+
+    var facebookUserTwo = {
+        username: 'MikeBala',
+        password: 'feijoadacombanana',
+        email: 'ain@example.com',
+        profileImage: 'foto2-reference.jpg',
+        friends: ['Lucas', 'Anna', 'Julia'],
+        posts: [post3]
+    }
+
+
+    var users = [facebookUserOne, facebookUserTwo]
+    for (user of users){
+        user.interest = []
+        for (post of user.posts){
+            post.reactions = post.likes
+            delete post.likes
+        }
+    }
+    console.log("We are done with users loop")
+    console.log(users)
+
+
+
+</script>
+
 <body>
     
 </body>
-</html>

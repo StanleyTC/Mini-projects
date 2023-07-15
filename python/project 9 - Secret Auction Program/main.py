@@ -1,4 +1,5 @@
 from ascii import hammer
+from replit import clear
 
 person = {}
 list = []
@@ -12,7 +13,7 @@ while answer == "yes":
     person["bid"] = float(input('What is your bid? $'))
     list.append(person.copy())
     answer = input("Do you want to add a new person? yes or no: ").lower()
-
+    clear()
 
 bigger = 0
 
