@@ -43,7 +43,7 @@
         profileImage: 'foto3-reference.jpg',
         friends: ['Gabriela', 'MikeBala', 'Julia'],
         posts: [post3],
-        birthDate: "2002/07/17"
+        birthDate: "2003/07/17"
     }
 
     /*
@@ -65,8 +65,6 @@
         var today = new Date()
         var birthdate = new Date(dateString)
 
-        console.log("today ",today)
-        console.log("birthdate", birthdate)
 
         if (today.getMonth() > birthdate.getMonth()) {
             var age = today.getFullYear()-birthdate.getFullYear()
@@ -77,15 +75,17 @@
         else {
             var age = today.getFullYear()-birthdate.getFullYear()
         }
-
-        console.log(today.getMonth(), birthdate.getMonth())
-        console.log("age: ", age)
+        
+        return age
     }
 
 
-    getAge(facebookUserOne.birthDate)
-    getAge(facebookUserTwo.birthDate)
-    getAge(facebookUserThree.birthDate)
+    var users = [facebookUserOne, facebookUserTwo, facebookUserThree]
+    for (user of users){
+        user.age = getAge(user.birthDate)
+        console.log('age of',user.username,': ',user.age)
+    }
+    console.log(users)
 
 </script>
 
