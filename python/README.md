@@ -8,3 +8,4 @@
 * [project 7 - hangman](project%207%20-%20hangman)
 * [project 8 - Caesar Cipher](project%208%20-%20Caesar%20Cipher)
 * [project 9 - Secret Auction Program](project%209%20-%20Secret%20Auction%20Program)
+* [project 10 - calculator](project%2010%20-%20calculator)
