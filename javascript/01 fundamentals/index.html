@@ -34,19 +34,49 @@
         posts: [post3]
     }
 
-
-    var users = [facebookUserOne, facebookUserTwo]
-    for (user of users){
-        user.interest = []
+    function replaceReactions(user){
         for (post of user.posts){
             post.reactions = post.likes
             delete post.likes
         }
+
+
+        // console.log(user)
     }
-    console.log("We are done with users loop")
-    console.log(users)
 
+    newfriends = ["robert", "lucas", "gabriel"]
+    /*
 
+    There is two functions to lists:
+    pop() - remove the last element
+    push() - add a new element to the list
+
+    There is a function to strings
+    replace("text to replace", "new text") - replaces a part of a string
+
+    sometext = "i used to live a long long time ago"
+    replace(/long/g, "no")
+    separe = "try to separate it"
+    separe.split(/\s+/)
+    */
+
+    var users = [facebookUserOne, facebookUserTwo]
+    for (user of users) {
+        user.interests = []
+        replaceReactions(user)
+    }
+
+    var fullNames = ["Anna Smith", "Steve Black", "Kate Baker"]
+    var fullNamesObjects = []
+    for (name in fullNames) {
+        names = fullNames[name].split(/\s+/)
+        var firstAndLastName = {
+            firstName: names[0],
+            lastName: names[1]
+        }
+        fullNamesObjects.push(firstAndLastName)
+    }
+    console.log(fullNamesObjects)
 
 </script>
 
