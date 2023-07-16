@@ -22,7 +22,8 @@
         email: '2050@example.com',
         profileImage: 'foto-reference.jpg',
         friends: ['Mike', 'Anna', 'Jenny'],
-        posts: [post1, post2]
+        posts: [post1, post2],
+        birthDate: "2004/08/10"
     }
 
     var facebookUserTwo = {
@@ -31,20 +32,10 @@
         email: 'ain@example.com',
         profileImage: 'foto2-reference.jpg',
         friends: ['Lucas', 'Anna', 'Julia'],
-        posts: [post3]
+        posts: [post3],
+        birthDate: "2002/07/25"
     }
 
-    function replaceReactions(user){
-        for (post of user.posts){
-            post.reactions = post.likes
-            delete post.likes
-        }
-
-
-        // console.log(user)
-    }
-
-    newfriends = ["robert", "lucas", "gabriel"]
     /*
 
     There is two functions to lists:
@@ -60,23 +51,25 @@
     separe.split(/\s+/)
     */
 
-    var users = [facebookUserOne, facebookUserTwo]
-    for (user of users) {
-        user.interests = []
-        replaceReactions(user)
+    function getAge(dateString) {
+        var today = new Date()
+        var birthdate = new Date(dateString)
+
+        console.log("today ",today)
+        console.log("birthdate", birthdate)
+
+        if (today.getMonth >= birthdate.getMonth && today.getDate >= birthdate.getMonth) {
+            var age = today.getFullYear()-birthdate.getFullYear()
+        }
+        else {
+            var age = today.getFullYear()-birthdate.getFullYear()-1
+        }
+        console.log("age: ", age)
     }
 
-    var fullNames = ["Anna Smith", "Steve Black", "Kate Baker"]
-    var fullNamesObjects = []
-    for (name in fullNames) {
-        names = fullNames[name].split(/\s+/)
-        var firstAndLastName = {
-            firstName: names[0],
-            lastName: names[1]
-        }
-        fullNamesObjects.push(firstAndLastName)
-    }
-    console.log(fullNamesObjects)
+
+    getAge(facebookUserOne.birthDate)
+    getAge(facebookUserTwo.birthDate)
 
 </script>
 
