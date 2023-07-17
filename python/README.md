@@ -10,3 +10,4 @@
 * [project 9 - Secret Auction Program](project%20009%20-%20Secret%20Auction%20Program)
 * [project 10 - calculator](project%20010%20-%20calculator)
 * [project 011 - blackjack](project%20011%20-%20blackjack)
+* [project 012 - the number guessing](project%20012%20-%20the%20number%20guessing)
