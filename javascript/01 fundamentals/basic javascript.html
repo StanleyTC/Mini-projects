@@ -1,0 +1,94 @@
+<script>
+    var post1 = {
+        content: "This is my super post",
+        likes: 300,
+        shares: 20
+    }
+    var post2 = {
+        content: "This is my bit boring post",
+        likes: 10,
+        shares: 0
+    }
+
+    var post3 = {
+        content: "This is Mikesbala post",
+        likes: 1000000,
+        shares: 1110
+    }
+
+    var facebookUserOne = {
+        username: 'RobertinhoGameplays',
+        password: 'Supersenhamuitofoda',
+        email: '2050@example.com',
+        profileImage: 'foto-reference.jpg',
+        friends: ['Mike', 'Anna', 'Jenny'],
+        posts: [post1, post2],
+        birthDate: "2004/08/10"
+    }
+
+    var facebookUserTwo = {
+        username: 'MikeBala',
+        password: 'feijoadacombanana',
+        email: 'ain@example.com',
+        profileImage: 'foto2-reference.jpg',
+        friends: ['Lucas', 'Anna', 'Julia', 'Jefferson Caminhões'],
+        posts: [post3],
+        birthDate: "2002/07/25"
+    }
+
+    var facebookUserThree = {
+        username: 'Jefferson Caminhões',
+        password: 'babuinoAzul@543',
+        email: 'piromba@example.com',
+        profileImage: 'foto3-reference.jpg',
+        friends: ['Gabriela', 'MikeBala', 'Julia'],
+        posts: [post3],
+        birthDate: "2003/07/17"
+    }
+
+    /*
+
+    There is two functions to lists:
+    pop() - remove the last element
+    push() - add a new element to the list
+
+    There is a function to strings
+    replace("text to replace", "new text") - replaces a part of a string
+
+    sometext = "i used to live a long long time ago"
+    replace(/long/g, "no")
+    separe = "try to separate it"
+    separe.split(/\s+/)
+    */
+
+    function getAge(dateString) {
+        var today = new Date()
+        var birthdate = new Date(dateString)
+
+
+        if (today.getMonth() > birthdate.getMonth()) {
+            var age = today.getFullYear()-birthdate.getFullYear()
+        }
+        else if (today.getMonth() === birthdate.getMonth() && today.getDate() < birthdate.getDate()) {
+            var age = today.getFullYear()-birthdate.getFullYear() -1
+        }
+        else {
+            var age = today.getFullYear()-birthdate.getFullYear()
+        }
+        
+        return age
+    }
+
+
+    var users = [facebookUserOne, facebookUserTwo, facebookUserThree]
+    for (user of users){
+        user.age = getAge(user.birthDate)
+        console.log('age of',user.username,': ',user.age)
+    }
+    console.log(users)
+
+</script>
+
+<body>
+    
+</body>
