@@ -1,7 +1,7 @@
 <!--      <> </>  =  tags      -->
 <body>
     <div>
-        <img src = "dev.png">
+        <img id = "logo" src = "dev.png">
         <input type = "text" placeholder= "Search...">
         <button>log in</button>
     </div>
@@ -12,13 +12,14 @@
     <div> <!-- Div is to divide elements in html from each other-->
         <h1>Article title</h1>
         <h2>Short information on article</h2>
-        <i>written by: StanleyTC <br>date: 2023.07.17</i>
+        <p class = "article-info"><i>written by: StanleyTC </i></p>
+        <p class = "article-info"><i>date: 2023.07.17</i></p>
     </div>
 
 
     <div>
         <div>
-            <img src = "cat.jpg">
+            <img id = "article-cover" src = "cat.jpg">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, labore? Adipisci perferendis laboriosam alias maiores nihil consectetur architecto cum esse veritatis aut expedita debitis laudantium nemo, earum neque necessitatibus a?</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolores quam delectus fugiat totam inventore in illo a alias reprehenderit non officia nam sunt, rem placeat animi enim hic sint?</p>
         </div>
@@ -61,4 +62,17 @@
         margin: 5px;
         border-radius: 5px; /*arredonda as bordas*/
     }
+
+    #logo {
+        width:40px;
+    }
+    #article-cover{
+        width: 450px;
+    }
+
+    .article-info{
+        color: grey;
+
+    }
+    
 </style>
