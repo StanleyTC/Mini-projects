@@ -26,7 +26,7 @@ lista = [
     },
     {
         'Name': 'Instagram',
-        'followers': 316,
+        'followers': 31,
         'description': 'Social media platform'
     },
     {
