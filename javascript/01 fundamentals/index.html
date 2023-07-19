@@ -1,6 +1,6 @@
 <!--      <> </>  =  tags      -->
 <body>
-    <div>
+    <div id="header">
         <img id = "logo" src = "dev.png">
         <input type = "text" placeholder= "Search...">
         <button>log in</button>
@@ -8,42 +8,59 @@
 
 
 
+    <div id="main-section-container">
+        <div>
+            <div> <!-- Div is to divide elements in html from each other-->
+                <h1>Article title</h1>
+                <h2>Short information on article</h2>
+                <p class = "article-info"><i>written by: StanleyTC </i></p>
+                <p class = "article-info"><i>date: 2023.07.17</i></p>
+            </div>
 
-    <div> <!-- Div is to divide elements in html from each other-->
-        <h1>Article title</h1>
-        <h2>Short information on article</h2>
-        <p class = "article-info"><i>written by: StanleyTC </i></p>
-        <p class = "article-info"><i>date: 2023.07.17</i></p>
+
+            <div>
+                <div>
+                    <img id = "article-cover" src = "cat.jpg">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, labore? Adipisci perferendis laboriosam alias maiores nihil consectetur architecto cum esse veritatis aut expedita debitis laudantium nemo, earum neque necessitatibus a?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolores quam delectus fugiat totam inventore in illo a alias reprehenderit non officia nam sunt, rem placeat animi enim hic sint?</p>
+                </div>
+                <div>
+                    <h3>Section header</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia exercitationem nemo ex nostrum, sed dolores voluptatibus vel tempore doloribus nihil in officiis perspiciatis. Non facilis repellendus magni illum, cum aperiam!</p>
+                    <ul>
+                        <li>item 1</li>
+                        <li>item 2</li>
+                        <li>item 3</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div>
+            <div>
+                <p>
+                    <h2>Side section</h2>
+                    <h3>Another article title</h3> 
+                    <h4>Another article short info Link</h4>
+                    <a href="https://github.com/StanleyTC">Click here</a>
+                    <a></a>
+                </p>
+            </div>
+            <div>
+                <p>
+                    <h2>Also Side section</h2>
+                    <h3>Another article title</h3> 
+                    <h4>short description</h4>
+                    <a href="https://www.google.com">a new site</a>
+                    <a></a>
+                </p>
+            </div>
+        </div>
     </div>
 
-
     <div>
-        <div>
-            <img id = "article-cover" src = "cat.jpg">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, labore? Adipisci perferendis laboriosam alias maiores nihil consectetur architecto cum esse veritatis aut expedita debitis laudantium nemo, earum neque necessitatibus a?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolores quam delectus fugiat totam inventore in illo a alias reprehenderit non officia nam sunt, rem placeat animi enim hic sint?</p>
-        </div>
-        <div>
-            <h3>Section header</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia exercitationem nemo ex nostrum, sed dolores voluptatibus vel tempore doloribus nihil in officiis perspiciatis. Non facilis repellendus magni illum, cum aperiam!</p>
-            <ul>
-                <li>item 1</li>
-                <li>item 2</li>
-                <li>item 3</li>
-            </ul>
-        </div>
-    </div>
-
-
-
-    <div>
-        <p>
-            <h2>Side section</h2>
-            <h3>Another article title</h3> 
-            <h4>Another article short info Link</h4>
-            <a href="https://github.com/StanleyTC">Click here</a>
-            <a></a>
-        </p>
+        <p>This is the footer</p>
     </div>
 </body>
 
@@ -59,7 +76,7 @@
 
     div {
         border: 1px solid black;
-        margin: 5px;
+        
         border-radius: 5px; /*arredonda as bordas*/
     }
 
@@ -75,4 +92,13 @@
 
     }
     
+    #main-section-container{
+        display: flex;
+    }
+
+    #header{
+        display: flex;
+        justify-content: space-between;
+    }
+
 </style>
