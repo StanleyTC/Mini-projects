@@ -65,11 +65,17 @@ status={
     'Money': 100
     }
 
+
+
+print(coffee)
+
+
+
 machine = 'on'
 while machine == 'on':
 
 
-    print(coffee)
+
 
     # 1. Prompt user by asking "What you like? (espresso/latte/cappuccino)"
     user = input('What would you like? (espresso/latte/cappuccino): ').lower()
@@ -125,4 +131,9 @@ while machine == 'on':
             calculateMoney = 0
 
 
-
+    # Caso o dono queira reabastecer
+    if user == "refuel":
+        status['Coffee'] = status['Coffee'] + int(input('How much coffe to refuel? '))
+        status['Milk'] = status['Milk'] + int(input('How much Milk to refuel? '))
+        status['Water'] = status['Water'] + int(input('How much Water to refuel? '))
+        status['Money'] = status['Money'] + int(input('How much Money to refuel? '))
