@@ -14,3 +14,4 @@
 * [project 012 - the number guessing](project%20012%20-%20the%20number%20guessing)
 * [project 013 - Rock Paper Scissors](project%20013%20-%20Rock%20Paper%20Scissors)
 * [project 014 - higher lower game](project%20014%20-%20higher%20lower%20game)
+* [project 015 - the coffe machine code](project%20015%20-%20the%20coffe%20machine%20code)
