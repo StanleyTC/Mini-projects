@@ -3,12 +3,17 @@
 class CoffeeMaker:
 
     # Irei criar os aatributos agua, leite, café, dinheiro
-    def __init__(self, water=0, milk=0, coffee=0, money=0):
-        self.Water = 300
-        self.Milk = 200
-        self.Coffee = 100
-        self.Money = 100
-    
+    def __init__(self, water=0, milk=0, coffee=0, money=0, counter=0):
+        if counter == 1 or counter == 0:
+            self.Water = 300 - water
+            self.Milk = 200 - milk
+            self.Coffee = 100 - coffee
+            self.Money = 100 - money
+        else:
+            self.Water -= water
+            self.Milk -= milk
+            self.Coffee -= coffee
+            self.Money -= money         
         
     # irei criar a ação de fazer o café caso os ingredientes sejam suficientes
     def makecoffee(self, user):
@@ -17,8 +22,8 @@ class CoffeeMaker:
         # para o espresso:
         if user == 'espresso':
             if (self.Water-50>=0) and (self.Coffee-18>=0):
-                water = self.Water -50
-                coffee = self.coffee - 18
+                self.Water = self.Water -50
+                self.Coffee = self.Coffee - 18
                 return 1
 
             else:
@@ -44,9 +49,9 @@ class CoffeeMaker:
         
         # irei criar a ação de report
         if user == 'report':
-            print(f'Coffe: {water}g')
-            print(f'Milk: {coffee}ml')
-            print(f'Water: {milk}ml')
+            print(f'Coffe: {self.Water}g')
+            print(f'Milk: {self.Milk}ml')
+            print(f'Water: {self.Coffee}ml')
             print(f'Money: ${self.Money}')
             
             

@@ -8,7 +8,7 @@ from replit import clear
 clear()
 print(coffee)
 
-
+counter = 1
 machine = 'on'
 while machine == 'on':
     # 1. Prompt user by asking "What you like? (espresso/latte/cappuccino)"
@@ -26,7 +26,7 @@ while machine == 'on':
     # espresso
 
     if user == 'espresso':
-        coffee = CoffeeMaker()
+        coffee = CoffeeMaker(50, 0, 18, 0, 1) # 50ml water, 0ml milk, 18g coffe, ignore money for now
         status = coffee.makecoffee('espresso')
         if status == 1:
             pennies = float(input('Insert the number of pennies: '))
@@ -45,6 +45,8 @@ while machine == 'on':
                 print(f'Here is your espresso and your change {moneyStatus}')
         else:
             print(error)
+
+        counter +=1
         # Calcular preço
     #     if calculateMoney == 1:
     #         money(user)
