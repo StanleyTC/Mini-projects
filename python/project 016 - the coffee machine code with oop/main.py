@@ -1,0 +1,1 @@
+# Try to study OOP with python before starting this project

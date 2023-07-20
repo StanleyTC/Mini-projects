@@ -23,3 +23,4 @@ If you keep going over the projects, they will become harder. lists and dicts wi
 
 ## Intermediate projects:
 * [project 015 - the coffee machine code](project%20015%20-%20the%20coffee%20machine%20code)
+* [project 016 - the coffee machine code with oop](project%20016%20-%20the%20coffee%20machine%20code%20with%20oop)
