@@ -1,4 +1,10 @@
+# Python projects
+In this repository, you will have several projects, one hundred to be more specific, ranging from the basics of programming in python to advanced.
+I've been doing these projects as part of a bootcamp, and I want to make them available to help all those who want to learn python (trying to do the projects will definitely make you learn programming well)
+
 ## Basic projects: 
+In basic projects, you will find projects that practice use of variables, functions, loops and if conditions.
+If you keep going over the projects, they will become harder. lists and dicts will be used over some of these projects
 * [project 001 - random name](project%20001%20-%20random%20name)
 * [project 002 - tip calculator](project%20002%20-%20tip%20calculator)
 * [project 003 - treasure island](project%20003%20-%20treasure%20map)
