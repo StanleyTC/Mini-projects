@@ -20,7 +20,7 @@ while machine == 'on':
     # report function
     if user == "report":
         report = CoffeeMaker()
-        print(report.report())
+        print(report.makecoffee('report'))
     # discount values:
     error = 'Error, Sorry we have no enought resources :c'
     # espresso
@@ -29,47 +29,57 @@ while machine == 'on':
         coffee = CoffeeMaker()
         status = coffee.makecoffee('espresso')
         if status == 1:
-            money = MoneyMachine()
-            moneyStatus = money.calculateMoney()
-            if moneyStatus == 1:
-                print()
+            pennies = float(input('Insert the number of pennies: '))
+            nicles = float(input('Insert the number of nicles: '))
+            dimes = float(input('Insert the number os fimes: '))
+            quarters = float(input('Insert the number of quarters: '))
+            money = MoneyMachine(pennies, nicles, dimes, quarters)
+            moneyStatus = money.verifyMoney('espresso', coffee.Money)
+            if moneyStatus == -1:
+                print("Here is your espresso")
+            elif moneyStatus == 0:
+                print('Error! not enought money')
+            elif moneyStatus == -2:
+                print('Error! no machine money enought, take your money back')
+            else:
+                print(f'Here is your espresso and your change {moneyStatus}')
         else:
             print(error)
         # Calcular preço
-        if calculateMoney == 1:
-            money(user)
-            calculateMoney = 0
-    # latte
-    if user == 'latte':
-        if status['Coffee'] - 24 >= 0 and status['Water'] - 200 >= 0 and status['Milk'] - 150 >= 0:
-            status['Coffee'] -= 24
-            status['Water'] -= 200
-            status['Milk'] -= 150
-            calculateMoney = 1
-        else:
-            print(error)
-        # Calcular preço
-        if calculateMoney == 1:
-            money(user)
-            calculateMoney = 0
-    # cappuccino
-    if user == 'cappuccino':
-        if status['Coffee'] - 24 >= 0 and status['Water'] - 250 >= 0 and status['Milk'] - 100 >= 0:
-            status['Coffee'] -= 24
-            status['Water'] -= 250
-            status['Milk'] -= 100
-            calculateMoney = 1
-        else:
-            print(error)
-        # Calcular preço
-        if calculateMoney == 1:
-            money(user)
-            calculateMoney = 0
+    #     if calculateMoney == 1:
+    #         money(user)
+    #         calculateMoney = 0
+    # # latte
+    # if user == 'latte':
+    #     if status['Coffee'] - 24 >= 0 and status['Water'] - 200 >= 0 and status['Milk'] - 150 >= 0:
+    #         status['Coffee'] -= 24
+    #         status['Water'] -= 200
+    #         status['Milk'] -= 150
+    #         calculateMoney = 1
+    #     else:
+    #         print(error)
+    #     # Calcular preço
+    #     if calculateMoney == 1:
+    #         money(user)
+    #         calculateMoney = 0
+    # # cappuccino
+    # if user == 'cappuccino':
+    #     if status['Coffee'] - 24 >= 0 and status['Water'] - 250 >= 0 and status['Milk'] - 100 >= 0:
+    #         status['Coffee'] -= 24
+    #         status['Water'] -= 250
+    #         status['Milk'] -= 100
+    #         calculateMoney = 1
+    #     else:
+    #         print(error)
+    #     # Calcular preço
+    #     if calculateMoney == 1:
+    #         money(user)
+    #         calculateMoney = 0
 
 
-    # Caso o dono queira reabastecer
-    if user == "refuel":
-        status['Coffee'] = status['Coffee'] + int(input('How much coffe to refuel? '))
-        status['Milk'] = status['Milk'] + int(input('How much Milk to refuel? '))
-        status['Water'] = status['Water'] + int(input('How much Water to refuel? '))
-        status['Money'] = status['Money'] + int(input('How much Money to refuel? '))
+    # # Caso o dono queira reabastecer
+    # if user == "refuel":
+    #     status['Coffee'] = status['Coffee'] + int(input('How much coffe to refuel? '))
+    #     status['Milk'] = status['Milk'] + int(input('How much Milk to refuel? '))
+    #     status['Water'] = status['Water'] + int(input('How much Water to refuel? '))
+    #     status['Money'] = status['Money'] + int(input('How much Money to refuel? '))

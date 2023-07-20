@@ -1,53 +1,52 @@
 class MoneyMachine:
-    def __init__(self):
-        ...
-    def money(user):
-        pennies=float(input('Pennies: '))
-        nicles = float(input('nicles: '))
-        dimes = float(input('dimes: '))
-        quarters = float(input('Quarters: '))
-        totalValue = (quarters/4 + dimes/10 + nicles/20 + pennies/100)
-        # Expresso, Latte, Cappucino
-        # 1.5$, 2.5$, 3.0$
-        if user == 'espresso':
-            if totalValue<1.5 or status['Money']- (totalValue-1.5) < 0:
-                print('Error! money problem')
-                status['Coffee'] += 18
-                status['Water'] += 50
-            elif totalValue == 1.5:
-                print("Done! that's your espresso")
-                status['Money'] += totalValue
-            else:
-                if status['Money']- (totalValue-3) >= 0:
-                    status['Money'] += totalValue
-                    status['Money']= status['Money']- (totalValue-1.5)
-                    print(f'Here, take {totalValue-1.5}&, it is your exchange')
-        if user == 'latte':
-            if totalValue<2.5 or status['Money']- (totalValue-2.5) < 0:
-                print('Error! money problem! take it back')
-                status['Coffee'] += 24
-                status['Water'] += 200
-                status['Milk'] += 150
-            elif totalValue == 2.5:
-                print("Done! that's your cappuccino")
-                status['Money'] += totalValue
-            else:
-                if status['Money']- (totalValue-2.5) >= 0:
-                    status['Money'] += totalValue
-                    status['Money']= status['Money']- (totalValue-2.5)
-                    print(f'Here, take {totalValue-2.5}&, it is your exchange')
+    # creating atributes money
+    def __init__(self, pennies, nicles, dimes, quarters):
+        self.pennies = pennies
+        self.nicles = nicles
+        self.dimes = dimes
+        self.quarters = quarters
+        self.totalMoney = pennies/100+nicles/20+dimes/10+quarters/4
 
-        if user == 'cappuccino':
-            if totalValue<3 or status['Money']-(totalValue-3)<0:
-                print('Error! not enought money')
-                status['Coffee'] += 24
-                status['Water'] += 250
-                status['Milk'] += 100
-            elif totalValue == 3:
-                print("Done! that's your cappuccino")
-                status['Money'] += totalValue
+
+    # verify money
+    def verifyMoney(self, user, machineMoney):
+        """
+        Verificar se é possivel obter o café com o dinheiro colocado.
+        Se o usuario inserir o valor exato, irá retornar -1,
+        Se o usuario inserir mais, irá retornar a diferença,
+        Se o usuario inserir menos, irá retornar 0,
+        se a maquina não ter troco, irá retornar -2
+        """
+        # espresso:
+        if user == 'espresso':
+            if self.totalMoney ==1.5:
+                return -1
+            elif self.totalMoney >1.5:
+                if machineMoney >= self.totalMoney-150:
+                    return self.totalMoney-1.5
+                else:
+                    return -2
             else:
-                if status['Money']-(totalValue-3)>=0:
-                    status['Money'] += totalValue
-                    status['Money']= status['Money']- (totalValue-3)
-                    print(f'Here, take {totalValue-3}&, it is your exchange')
+                return 0
+        # latte:
+        if user == 'latte':
+            if self.totalMoney ==2.5:
+                return -1
+            elif self.totalMoney >2.5:
+                if machineMoney >= self.totalMoney - 2.5:
+                    return self.totalMoney - 2.5
+                else:
+                    return -2
+            else:
+                return 0
+        # cappuccino:
+        if user == 'cappuccino':
+            if self.totalMoney ==3:
+                return -1
+            elif self.totalMoney > 3:
+                if machineMoney >= self.totalMoney -3:
+                    return self.totalMoney - 3
+                else:
+                    return -2
+            else:
+                return 0
