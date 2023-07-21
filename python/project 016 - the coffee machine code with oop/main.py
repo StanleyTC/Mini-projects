@@ -1,6 +1,7 @@
 # SIM, eu poderia usar funções nos trechos de códigos repetidos, mas como eu fiquei horas para fazer esse programa, não tive paciencia e apenas sai copiando e colando
 from ingredients import Ingredients
 from money import Money
+from ascii import coffee1
 
 machine = "on"
     
@@ -9,7 +10,7 @@ milk = 200
 coffee = 100
 money = 100
 
-
+print(coffee1)
 while machine == "on":
     user = input('What flavor do you want? espresso/latte/cappuccino: ').lower()
     if user == 'espresso':
@@ -93,5 +94,6 @@ while machine == "on":
                     water = lista[0]+250
                     coffee = lista[1]+24
                     milk = lista[2]+100
-
+    if user == 'off':
+        machine = 'off'
     # Iremos atualizar os valores de agua, leite, café e dinheiro depois de escolhido o pedido e ter pago
