@@ -23,7 +23,7 @@ class Money:
             if self.moneyMachine < 3:
                 return 0
             else: 
-                return 
+                return 1
     
     # Calcular, uma vez que a função acima retorne 1
     def calculate(self, user):

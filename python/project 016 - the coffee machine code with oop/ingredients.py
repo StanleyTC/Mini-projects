@@ -1,6 +1,6 @@
 class Ingredients:
     # atributos com o tipo de café, agua, café e leite
-    def __init__(self, coffeeKind, water=0, coffee=0, milk=0, defaultwater=0, defaultcoffee=0, defaultmilk=0, defaultmoney=0):
+    def __init__(self, coffeeKind, water, coffee, milk, defaultwater, defaultcoffee, defaultmilk, defaultmoney):
         self.coffeekind = coffeeKind
         self.water = water
         self.coffee = coffee

@@ -1,3 +1,4 @@
+# SIM, eu poderia usar funções nos trechos de códigos repetidos, mas como eu fiquei horas para fazer esse programa, não tive paciencia e apenas sai copiando e colando
 from ingredients import Ingredients
 from money import Money
 
@@ -24,41 +25,73 @@ while machine == "on":
         lista = cafe3.verifyIngredients()
 
     if user == 'report':
-        report = Ingredients('report')
+        report = Ingredients('report', 0, 0, 0, water, coffee, milk, money)
         report.report()
 
     # Verificar se os ingredientes possuem recursos: se o valor for 0, não tem recurso
     if user == 'espresso' or user == 'latte' or user == 'cappuccino':
-    if lista == 0:
-        print('Error, sorry, not enought resources :C')
-    else:
-        pennies=float(input('Pennies: '))
-        nicles = float(input('nicles: '))
-        dimes = float(input('dimes: '))
-        quarters = float(input('Quarters: '))
-        total = quarters/4 + dimes/10+ nicles/20+ pennies/100
-        money = Money(pennies, nicles, dimes, quarters, money)
-        moneyResult = money.verifyMoney(user)
-        # Vamos verificar: se receber 1 - tem dinheiro na máquina. se receber 0 - não tem dinheiro na máquina
-        if moneyResult == 1:
-            final = money.calculate(user)
-            # se receber 2, somar com o valor da maquina. se receber -1, dinheiro insuficiente, se -2, devolver troco
-            if final == 2:
-                money += total
-                print(f'Here is your {user}')
-            if final == -1:
-                print('Not enought money')
-            if final == -2:
-                if user == 'cappuccino':
-                    money += 1.5
-                    print(f'take ${total-1.5} exchange')
+        if lista == 0:
+            print('Error, sorry, not enought resources :C')
+        else:
+            pennies=float(input('Pennies: '))
+            nicles = float(input('nicles: '))
+            dimes = float(input('dimes: '))
+            quarters = float(input('Quarters: '))
+            total = quarters/4 + dimes/10+ nicles/20+ pennies/100
+            moneyy = Money(pennies, nicles, dimes, quarters, money)
+            moneyResult = moneyy.verifyMoney(user)
+            # Vamos verificar: se receber 1 - tem dinheiro na máquina. se receber 0 - não tem dinheiro na máquina
+            if moneyResult == 1:
+                final = moneyy.calculate(user)
+                # se receber 2, somar com o valor da maquina. se receber -1, dinheiro insuficiente, se -2, devolver troco
+                if final == 2:
+                    money += total
+                    print(f'Here is your {user}')
+                    water = lista[0]
+                    coffee = lista[1]
+                    milk = lista[2]
+                if final == -1:
+                    print('Not enought money')
+                    if user == 'espresso':
+                        water = lista[0]+50
+                        coffee = lista[1]+18
+                        milk = lista[2]
+                    if user == 'latte':
+                        water = lista[0]+200
+                        coffee = lista[1]+24
+                        milk = lista[2]+150
+                    if user == 'cappuccino':
+                        water = lista[0]+250
+                        coffee = lista[1]+24
+                        milk = lista[2]+100
+                if final == -2:
+                    if user == 'espresso':
+                        money += 1.5
+                        print(f'take ${total-1.5} exchange')
+                    if user == 'latte':
+                        money += 2.5
+                        print(f'take ${total-2.5} exchange')
+                    if user == 'cappuccino':
+                        money += 3
+                        print(f'take ${total-3} exchange')
+
+                    water = lista[0]
+                    coffee = lista[1]
+                    milk = lista[2]
+
+            # repor ingredientes
+            if moneyResult == 0:
+                if user == 'espresso':
+                    water = lista[0]+50
+                    coffee = lista[1]+18
+                    milk = lista[2]
                 if user == 'latte':
-                    money += 2.5
-                    print(f'take ${total-2.5} exchange')
+                    water = lista[0]+200
+                    coffee = lista[1]+24
+                    milk = lista[2]+150
                 if user == 'cappuccino':
-                    money += 3
-                    print(f'take ${total-3} exchange')
+                    water = lista[0]+250
+                    coffee = lista[1]+24
+                    milk = lista[2]+100
+
     # Iremos atualizar os valores de agua, leite, café e dinheiro depois de escolhido o pedido e ter pago
-    water = lista[0]
-    coffee = lista[1]
-    milk = lista[2]
