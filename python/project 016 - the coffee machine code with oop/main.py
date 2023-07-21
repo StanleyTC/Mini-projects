@@ -1,4 +1,3 @@
-# SIM, eu poderia usar funções nos trechos de códigos repetidos, mas como eu fiquei horas para fazer esse programa, não tive paciencia e apenas sai copiando e colando
 from ingredients import Ingredients
 from money import Money
 from ascii import coffee1
@@ -30,6 +29,22 @@ while machine == "on":
         report.report()
 
     # Verificar se os ingredientes possuem recursos: se o valor for 0, não tem recurso
+    def wrong(user):
+        if user == 'espresso':
+            water = lista[0]+50
+            coffee = lista[1]+18
+            milk = lista[2]
+        if user == 'latte':
+            water = lista[0]+200
+            coffee = lista[1]+24
+            milk = lista[2]+150
+        if user == 'cappuccino':
+            water = lista[0]+250
+            coffee = lista[1]+24
+            milk = lista[2]+100
+            return water, coffee, milk
+
+
     if user == 'espresso' or user == 'latte' or user == 'cappuccino':
         if lista == 0:
             print('Error, sorry, not enought resources :C')
@@ -53,18 +68,7 @@ while machine == "on":
                     milk = lista[2]
                 if final == -1:
                     print('Not enought money')
-                    if user == 'espresso':
-                        water = lista[0]+50
-                        coffee = lista[1]+18
-                        milk = lista[2]
-                    if user == 'latte':
-                        water = lista[0]+200
-                        coffee = lista[1]+24
-                        milk = lista[2]+150
-                    if user == 'cappuccino':
-                        water = lista[0]+250
-                        coffee = lista[1]+24
-                        milk = lista[2]+100
+                    water, coffee, milk = wrong(user)
                 if final == -2:
                     if user == 'espresso':
                         money += 1.5
@@ -82,18 +86,7 @@ while machine == "on":
 
             # repor ingredientes
             if moneyResult == 0:
-                if user == 'espresso':
-                    water = lista[0]+50
-                    coffee = lista[1]+18
-                    milk = lista[2]
-                if user == 'latte':
-                    water = lista[0]+200
-                    coffee = lista[1]+24
-                    milk = lista[2]+150
-                if user == 'cappuccino':
-                    water = lista[0]+250
-                    coffee = lista[1]+24
-                    milk = lista[2]+100
+                water, coffee, milk = wrong(user)
     if user == 'off':
         machine = 'off'
     # Iremos atualizar os valores de agua, leite, café e dinheiro depois de escolhido o pedido e ter pago
