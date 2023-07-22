@@ -5,6 +5,6 @@ class QuestionModel:
 
     def verifyAnswer(self):
         if self.answer == self.text['answer']:
-            print('correct')
+            return 1
         else:
-            print('wrong')
+            return 0
