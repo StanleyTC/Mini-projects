@@ -25,3 +25,4 @@ If you keep going over the projects, they will become harder. lists and dicts wi
 * [project 015 - the coffee machine code](project%20015%20-%20the%20coffee%20machine%20code)
 * [project 016 - the coffee machine code with oop](project%20016%20-%20the%20coffee%20machine%20code%20with%20oop)
 * [project 017 - the quiz game](project%20017%20-%20the%20quiz%20game)
+* [project 018 - turtle challenge GUI](project%20018%20-%20turtle%20challenge%20GUI)
