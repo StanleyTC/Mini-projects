@@ -1,5 +1,5 @@
 
-from random import randint
+from random import randint, choice
 from turtle import Turtle, done
 
 def colorGenerate():
@@ -18,7 +18,7 @@ def colorGenerate():
 timmy = Turtle()
 color = colorGenerate()
 timmy.color(color)
-
+timmy.speed("fastest")
 # circle: 20
 # line: 50
 # circle: 20
@@ -27,7 +27,19 @@ timmy.color(color)
 colorList = []
 for i in range(0, 100):
     colorList.append(colorGenerate())
-    timmy.penup()
 
+# Turtle making the dots:
+for i in range(0, 10):
+    for j in range(0, 10):
+        timmy.dot(10, choice(colorList))
+        timmy.penup()
+        timmy.forward(25)
+    timmy.right(180)
+    timmy.forward(250)
+    timmy.left(270)
+    timmy.forward(25)
+    timmy.right(90)
+
+    
 print(colorList)
 done()
