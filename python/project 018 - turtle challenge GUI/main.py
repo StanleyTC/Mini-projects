@@ -19,6 +19,13 @@ timmy = Turtle()
 color = colorGenerate()
 timmy.color(color)
 timmy.speed("fastest")
+
+# starting further down the screen
+timmy.setheading(225)
+timmy.penup()
+timmy.forward(300)
+timmy.pendown()
+timmy.setheading(0)
 # circle: 20
 # line: 50
 # circle: 20
@@ -31,13 +38,13 @@ for i in range(0, 100):
 # Turtle making the dots:
 for i in range(0, 10):
     for j in range(0, 10):
-        timmy.dot(10, choice(colorList))
+        timmy.dot(20, choice(colorList))
         timmy.penup()
-        timmy.forward(25)
+        timmy.forward(50)
     timmy.right(180)
-    timmy.forward(250)
+    timmy.forward(500)
     timmy.left(270)
-    timmy.forward(25)
+    timmy.forward(50)
     timmy.right(90)
 
     
