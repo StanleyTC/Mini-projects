@@ -19,10 +19,15 @@ timmy = Turtle()
 color = colorGenerate()
 timmy.color(color)
 
+# circle: 20
+# line: 50
+# circle: 20
+
 # RGB color list
 colorList = []
-for i in range(0, 25):
+for i in range(0, 100):
     colorList.append(colorGenerate())
+    timmy.penup()
 
 print(colorList)
 done()
