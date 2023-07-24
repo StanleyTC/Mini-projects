@@ -14,7 +14,7 @@ path = input(("you are at a cross road. Where do you want to go? type 'left' or 
 if path != 'left':
     print('You fall into a hole. Game Over')
 else:
-    lake= input(("you come to a lake. There is a island in the middle of the lake. Type 'wait' to wait for a boat. Type 'swin' to swin across: ")).lower()
+    lake= input(("you come to a lake. There is a island in the middle of the lake. Type 'wait' to wait for a boat. Type 'swim' to swim across: ")).lower()
     if lake != "wait":
         print("You were attacked by trout. Game over")
     else:
