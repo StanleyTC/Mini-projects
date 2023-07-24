@@ -26,3 +26,4 @@ If you keep going over the projects, they will become harder. lists and dicts wi
 * [project 016 - the coffee machine code with oop](project%20016%20-%20the%20coffee%20machine%20code%20with%20oop)
 * [project 017 - the quiz game](project%20017%20-%20the%20quiz%20game)
 * [project 018 - turtle challenge GUI](project%20018%20-%20turtle%20challenge%20GUI)
+* [project 019 - Etch-A-Sketch App and Turtle Race Game](project%20019%20-%20Etch-A-Sketch%20App%20and%20Turtle%20Race%20Game)
