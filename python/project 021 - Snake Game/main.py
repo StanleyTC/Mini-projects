@@ -1,6 +1,7 @@
 from turtle import Screen, done
 from snack import Snack
 from time import sleep
+from food import Food
 
 # Screen definitions
 screen = Screen()
@@ -10,24 +11,29 @@ screen.title("Snack Game")
 screen.tracer(0)
 
 snack = Snack()
+food = Food()
+
+
+
+screen.onkey(key="w", fun=snack.up)
+screen.onkey(key="a", fun=snack.left)
+screen.onkey(key="s", fun=snack.down)
+screen.onkey(key="d", fun=snack.right)
+
+
 
 
 screen.listen()
-# screen.onkey(key="w", fun=move_forwards)
-
-
-
 game_on = 1
 while game_on == 1: # if turtle.xcor()>230:
     screen.update()
     sleep(0.1)
     snack.moveForward()
-    screen.onkey(key="w", fun=snack.up)
-    screen.onkey(key="a", fun=snack.left)
-    screen.onkey(key="s", fun=snack.down)
-    screen.onkey(key="d", fun=snack.right)
 
 
+    # Detect collision with food.
+    if snack.head.distance(food) < 15: # if distance of snack head is less than 15 to food point
+        food.refresh()
 
 
 
