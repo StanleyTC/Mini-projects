@@ -1,6 +1,6 @@
 # Collection of Mini-Projects in Python and JavaScript
 
-This repository contains a variety of mini-projects implemented in Python and JavaScript, ranging from basic concepts to more complex implementations.
+This repository contains a variety of mini-projects implemented in Python, ranging from basic concepts to more complex implementations.
 
 ## Repository Structure
 
@@ -23,12 +23,6 @@ Inside the `python/` folder, you'll find 100 projects, arranged in increasing or
 Within that folder, projects range from very basic projects to the most advanced ones, so if you follow the order, regardless of taking a year, most likely when you finish and manage to do everything you will be a good programmer in python
 
 [📁 See Python projects here!](./python/)
-
-### JavaScript
-
-The `javascript/` folder contains assorted projects, with a primary focus on web development. This section is currently a bit messy, but will soon be organized for better navigation.
-
-[📁 See projects in JavaScript here!](./javascript/)
 
 ## How to use
 
