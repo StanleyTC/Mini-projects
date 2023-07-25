@@ -1,4 +1,5 @@
-# Collection of Mini-Projects in Python and JavaScript
+# Collection of Mini-Projects in Python 
+## going from very basics to web development with python, APIs REST, creating game and keep going)
 
 This repository contains a variety of mini-projects implemented in Python, ranging from basic concepts to more complex implementations.
 
@@ -28,7 +29,7 @@ Within that folder, projects range from very basic projects to the most advanced
 
 1. Clone this repository:
    ```
-   git clone "https://github.com/StanleyTC/Mini-projects.git"
+   git clone "https://github.com/StanleyTC/Python-Mini-Projects"
    ```
 
 2. Navigate to the project folder of interest.

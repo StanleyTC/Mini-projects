@@ -15,10 +15,44 @@ class Snack:
 
 
 
-    def move(self):
+    def moveForward(self):
         for i in range(len(self.segments)-1, 0, -1):
             new_x = self.segments[i-1].xcor()
             new_y = self.segments[i-1].ycor()
             self.segments[i].goto(new_x, new_y)
         self.segments[0].forward(20)
-        self.segments[0].left(90)
+        
+
+    def up(self):
+        self.segments[0].setheading(90)
+        for i in range(len(self.segments)-1, 0, -1):
+            new_x = self.segments[i-1].xcor()
+            new_y = self.segments[i-1].ycor()
+            self.segments[i].goto(new_x, new_y)
+
+
+    def down(self):
+        self.segments[0].setheading(270)
+        for i in range(len(self.segments)-1, 0, -1):
+            new_x = self.segments[i-1].xcor()
+            new_y = self.segments[i-1].ycor()
+            self.segments[i].goto(new_x, new_y)
+
+
+    def left(self):
+        self.segments[0].setheading(180)
+        for i in range(len(self.segments)-1, 0, -1):
+            new_x = self.segments[i-1].xcor()
+            new_y = self.segments[i-1].ycor()
+            self.segments[i].goto(new_x, new_y)
+
+
+    def right(self):
+        self.segments[0].setheading(0)
+        for i in range(len(self.segments)-1, 0, -1):
+            new_x = self.segments[i-1].xcor()
+            new_y = self.segments[i-1].ycor()
+            self.segments[i].goto(new_x, new_y)
+
+        
+        self.segments[0].forward(20)

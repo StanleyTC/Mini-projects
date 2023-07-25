@@ -12,12 +12,21 @@ screen.tracer(0)
 snack = Snack()
 
 
+screen.listen()
+# screen.onkey(key="w", fun=move_forwards)
+
+
 
 game_on = 1
 while game_on == 1: # if turtle.xcor()>230:
     screen.update()
     sleep(0.1)
-    snack.move()
+    snack.moveForward()
+    screen.onkey(key="w", fun=snack.up)
+    screen.onkey(key="a", fun=snack.left)
+    screen.onkey(key="s", fun=snack.down)
+    screen.onkey(key="d", fun=snack.right)
+
 
 
 
