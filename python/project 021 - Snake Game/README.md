@@ -1,0 +1,2 @@
+Hoje iremos aprender a construir nosso primeiro joguinho arcade, o jogo da cobra!
+Iremos fazer uso da biblioteca Turtle novamente, para mostrar e reforçar que não necessariamente ela tem que fazer algo envolvendo tartarugas, podemos manipular a classe Turtle e as demais para criarmos nossos proprios jogos
