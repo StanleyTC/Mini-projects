@@ -1,23 +1,29 @@
 from turtle import Turtle
 
-class Snack:
+class Snake:
     def __init__(self):    
-    # Snack definitions
+    # snake definitions
         self.starting_positions = [(0, 0),(-20, 0),(-40, 0)]
         self.segments = []
-        self.createSnack()
+        self.createSnake()
         self.head = self.segments[0]
 
 
-    def createSnack(self):
+    def createSnake(self):
         for position in self.starting_positions:
-            new_segment= Turtle("square")
-            new_segment.color("white")
-            new_segment.penup()
-            new_segment.goto(position)
-            self.segments.append(new_segment)
+            self.add_segment(position)
 
 
+    def add_segment(self, position):
+        new_segment= Turtle("square")
+        new_segment.color("white")
+        new_segment.penup()
+        new_segment.goto(position)
+        self.segments.append(new_segment)
+
+
+    def extend(self):
+        self.add_segment(self.segments[-1].position()) # with -1, will ad at the end of snake squares (the last position in represented by -1)
 
 
     def moveForward(self):
