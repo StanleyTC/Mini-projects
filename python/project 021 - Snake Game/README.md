@@ -24,3 +24,5 @@ class second(Test): # this class will inherit the Test class
         ...
 ```
 We'll use inherited classes to create a class just for the snake's food that will inherit some methods and attributes from the Turtle class to speed up our work.
+
+For the Scoreboard we will use the write method of the Turtle class, and we'll do that in another new class called scoreboard.py that will follow the inherited class model as well.

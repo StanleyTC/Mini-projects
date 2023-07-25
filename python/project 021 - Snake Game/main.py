@@ -2,6 +2,10 @@ from turtle import Screen, done
 from snack import Snack
 from time import sleep
 from food import Food
+from scoreboard import Scoreboard
+
+# Counter to scoreboard
+counter = 0
 
 # Screen definitions
 screen = Screen()
@@ -12,7 +16,7 @@ screen.tracer(0)
 
 snack = Snack()
 food = Food()
-
+scoreboard = Scoreboard()
 
 
 screen.onkey(key="w", fun=snack.up)
@@ -29,12 +33,14 @@ while game_on == 1: # if turtle.xcor()>230:
     screen.update()
     sleep(0.1)
     snack.moveForward()
-
+    
+    
 
     # Detect collision with food.
     if snack.head.distance(food) < 15: # if distance of snack head is less than 15 to food point
         food.refresh()
-
+        counter+=1
+        scoreboard.increaseScore()
 
 
 done()
