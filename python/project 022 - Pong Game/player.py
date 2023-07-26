@@ -1,10 +1,12 @@
 from turtle import Turtle
 
 class Players:
-    def __init__(self):
+    def __init__(self, player):
         self.segments = []
-        self.positions1= [(-380, -20),(-380, 0),(-380, 20)]
-        
+        if player == 1:
+            self.positions1= [(-380, -20),(-380, 0),(-380, 20)]
+        if player == 2:
+            self.positions1= [(380, -20),(380, 0),(380, 20)]
         self.player1()
         self.head_up = self.segments[0]
         self.head_down = self.segments[2]

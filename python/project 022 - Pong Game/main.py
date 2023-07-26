@@ -1,6 +1,8 @@
 from turtle import Turtle, Screen, done
-import player1
-import player2
+from player import Players
+#import player1
+#import player2
+from scoreboard import Scoreboard
 
 # definitions of screen
 screen = Screen()
@@ -23,9 +25,8 @@ for i in range(0, 15): # it will cover all the mid center in screen necessary to
 
 
 # Players 1 and 2 created
-player1 = player1.Players()
-player2 = player2.Players()
-
+player1 = Players(1)
+player2 = Players(2)
 
 screen.onkey(key="w", fun=player1.up)
 screen.onkey(key="s", fun=player1.down)
@@ -33,5 +34,13 @@ screen.onkey(key="Up", fun=player2.up)
 screen.onkey(key="Down", fun=player2.down)
 screen.listen()
 
+
+
+# scoreboard options
+score1=Scoreboard(1)
+score1.show_score()
+
+score2=Scoreboard(2)
+score2.show_score()
 
 done()
