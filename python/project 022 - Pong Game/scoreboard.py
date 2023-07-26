@@ -17,7 +17,16 @@ class Scoreboard(Turtle):
     
 
     def show_score(self):
-        if self.value==1:
-            self.write(f"{self.score}", align="left", font=("Arial", 50, "normal"))     
-        if self.value==2:
-            self.write(f"{self.score}", align="right", font=("Arial", 50, "normal"))
+        self.write(f"{self.score}", align="left", font=("Arial", 50, "normal"))     
+
+
+    
+    def NewScoreLeft(self):
+        self.clear()
+        self.score+=1
+        self.write(f"{self.score}", align="right", font=("Arial", 50, "normal"))
+    
+    def NewScoreRight(self):
+        self.clear()
+        self.score+=1
+        self.write(f"{self.score}", align="right", font=("Arial", 50, "normal"))

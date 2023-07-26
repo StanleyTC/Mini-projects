@@ -8,7 +8,7 @@ class Ball(Turtle):
         self.shape("square")
         self.goto(0,0)
         self.penup()
-        self.speed(2)
+        self.speed(1)
         self.x = 5
         self.y = 5
 
@@ -18,6 +18,14 @@ class Ball(Turtle):
         y = self.ycor()+self.y
         self.goto(x, y)
 
-    
-    def saltar(self):
+
+    def saltarY(self):
         self.y *= -1 
+        
+
+    def saltarX(self):
+        self.x *= -1 
+
+    def restart_position(self):
+        self.penup()
+        self.goto(0,0)
