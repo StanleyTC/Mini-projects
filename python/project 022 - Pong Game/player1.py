@@ -27,10 +27,15 @@ class Players:
 
 
     def up(self):
-        for segment in self.segments:
-            segment.sety(segment.ycor() + 20)
+        if self.head_up.ycor()<170:
+            for segment in self.segments:
+                segment.sety(segment.ycor() + 20)
+
 
 
     def down(self):
-        for segment in self.segments:
-            segment.sety(segment.ycor() - 20)
+        if self.head_down.ycor()>-150:
+            for segment in self.segments:
+                segment.sety(segment.ycor() - 20)
+            
+                
