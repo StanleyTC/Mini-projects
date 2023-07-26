@@ -18,3 +18,24 @@ This project can take a whole day or even more than a day if you're a total begi
 ## Requirements:
 
 - Access the link and try to solve, you don't need to install python at your computer to complete this project
+
+
+
+Este projeto não será executado em seu computador! se tentar vai dar erro porque as funções não foram criadas. O principal que será treinado dentro desse programa com certeza é o uso de funções, estude bem isso antes de começar.
+
+## Para que serve este código?
+
+Este código foi desenvolvido para resolver o quebra-cabeça localizado em:
+
+https://reeborg.ca/reeborg.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=Maze&url=worlds%
+
+Ou seja, seu objetivo será tentar aprender a usar funções, estruturas de repetição e estruturas condicionais para escapar do labirinto. Após esse desafio, você estará bem familiarizado com essas estruturas e poderá ter um domínio maior da programação em python (claro que ainda estamos no básico)
+
+## Não desista
+
+Este projeto pode levar um dia inteiro ou até mais de um dia se você for totalmente iniciante, isso não significa que os outros também levariam tanto tempo, mas com o que já foi exigido em projetos anteriores, é bom que você reforce bem sua lógica de programação para passar por este projeto e poder prosseguir para os outros com sua lógica de programação mais desenvolvida, então pode dar muito trabalho, e lembre-se: não se trata de tentar fazer todos os projetos o mais rápido possível , trata-se apenas de fazê-los.
+
+
+## Requisitos:
+
+- Acesse o link e tente resolver, não precisa instalar o python no seu computador para concluir este projeto

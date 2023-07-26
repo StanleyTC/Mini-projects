@@ -33,3 +33,35 @@ To execute the application, run [PasswordGenerator.py](main.py).
 
 - Python
 
+Gere senhas fortes e personalizadas com facilidade! Este aplicativo de linha de comando permite que você determine o número de letras, símbolos e números em sua senha, garantindo segurança e memorização.
+
+
+## [Script do Gerador de Senha](main.py)
+
+## Metas
+O objetivo é treinar o uso de listas para armazenar informações, que chamamos de elementos (estude sobre listas antes de fazer este projeto), e usar um módulo (estude quais são os módulos em python), neste caso aleatório para escolher, através do randint método, um valor aleatório, e através do método shuffle, vamos "randomizar" uma string para gerar uma senha.
+Aqui iremos novamente reforçar a estrutura de repetição FOR
+
+### Descrição:
+
+Em uma era em que a segurança online é fundamental, é vital ter senhas robustas e exclusivas. Este script permite que você personalize sua senha com base em suas preferências.
+
+### Como usar:
+
+1. Execute o script.
+2. Indique quantas letras deseja em sua senha.
+3. Especifique o número de símbolos desejados.
+4. Determine a quantidade de números que deseja incluir.
+5. O aplicativo exibirá uma senha embaralhada e aleatória com base em seus critérios.
+
+Para executar o aplicativo, execute [PasswordGenerator.py](main.py).
+
+## Características:
+
+- Comprimento de senha personalizável.
+- Randomização segura de letras, símbolos e números.
+- Opção para embaralhar os personagens para maior segurança.
+
+## Requisitos:
+
+- Python

@@ -37,3 +37,43 @@ Your decisions will lead to various outcomes. Some will lead to treasure, while 
 ## Requirements
 
 Ensure you have Python installed on your machine to run the game.
+
+
+
+## Descrição
+
+Embarque em uma aventura para encontrar o tesouro escondido na Ilha do Tesouro. Tenha cuidado, pois suas escolhas determinarão seu destino. Navegue pela encruzilhada, atravesse o lago e escolha a porta correta para encontrar o tesouro. Mas cuidado - o perigo espreita em cada esquina.
+
+A partir deste projeto, você aprenderá a usar a estrutura if condicional. Com esse projeto de pouquíssimas opções, você já poderá criar um rpg de texto do jeito que se fazia antigamente (para melhores resultados, bom para aprender e enquanto estruturas de repetição, veremos sobre isso em projetos posteriores).
+
+## Visualização do jogo
+```
+scss
+Copiar código
+     __________
+    /\____;;___|
+   | / /
+   `. ())oo() .
+    |\(%()*^^()^|
+   %| |-%-------|
+  % \ | % )) |
+  % |\|%________|
+vbnet
+Copiar código
+```
+"Bem-vindo à ilha do tesouro! Sua missão é encontrar o tesouro."
+
+## Como jogar
+
+1. Execute o script.
+2. Você se encontrará em uma encruzilhada. Escolha ir para 'esquerda' ou 'direita'.
+3. Se você passar pela encruzilhada, decida se vai 'esperar' por um barco em um lago ou 'nadar' através dele.
+4. Se você cruzou o lago com sucesso, você se deparará com três portas: vermelha, amarela e azul. Escolha sabiamente.
+
+## Resultados
+
+Suas decisões levarão a vários resultados. Alguns levarão ao tesouro, enquanto outros, infelizmente, levarão ao perigo.
+
+## Requisitos
+
+Certifique-se de ter o Python instalado em sua máquina para executar o jogo.

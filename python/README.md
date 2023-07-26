@@ -1,5 +1,7 @@
 # Python projects
 In this repository, you will have several projects, one hundred to be more specific, ranging from the basics of programming in python to advanced.
+## Documetation available in Portuguese in projects
+:brazil: :us:
 I've been doing these projects as part of a bootcamp, and I want to make them available to help all those who want to learn python (trying to do the projects will definitely make you learn programming well)
 
 ## Basic projects: 

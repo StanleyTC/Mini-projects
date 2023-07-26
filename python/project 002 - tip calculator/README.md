@@ -26,3 +26,32 @@ Copy code
 ## Grades
 
 Make sure you have Python installed on your machine so you can run the script.
+
+
+
+## Descrição
+
+Um aplicativo Python simples para calcular o valor da gorjeta em uma conta e dividir o total entre várias pessoas (código muito básico).
+
+## Como usar
+
+1. Execute o script.
+2. Você será solicitado a fornecer o valor total da conta.
+3. Em seguida, insira a porcentagem da gorjeta que deseja dar.
+4. Indique quantas pessoas irão dividir a conta.
+5. O programa vai te dizer quanto cada pessoa tem que pagar.
+
+## Exemplo
+```
+Bem-vindo à calculadora de gorjetas.
+Qual foi a conta total? $ 100
+Que tipo de porcentagem você gostaria de dar? 10
+Quantas pessoas para dividir a conta? dois
+Cada pessoa deve pagar: $ 55,0
+```
+concha
+Copiar código
+
+## Notas
+
+Certifique-se de ter o Python instalado em sua máquina para poder executar o script.
