@@ -1,7 +1,13 @@
 # Snake Arcade Game
 
+Description in english and portuguese br
+
 Today we are going to learn how to build our first arcade game, the snake game!
 We will make use of the Turtle library again, to show and reinforce that it does not necessarily have to do something involving turtles, we can manipulate the Turtle class and the others to create our own games
+
+
+![](snake.png) 
+
 
 ## What will this project do?
 For this project, class inheritance, splitting, object orientation, classes and the use of the Turtle module and its classes to create classic games will be exercised. With all the projects done so far, it's perfectly doable.
@@ -77,3 +83,83 @@ This script orchestrates the Snake game. It initializes the game window, manages
 - Introduce varying levels of difficulty.
 - Implement additional features like power-ups or obstacles.
 
+
+# Jogo Arcade da Cobrinha
+
+Hoje vamos aprender a construir nosso primeiro jogo de fliperama, o jogo da cobra!
+Faremos uso novamente da biblioteca Turtle, para mostrar e reforçar que não necessariamente tem que fazer algo envolvendo tartarugas, podemos manipular a classe Turtle e as demais para criarmos nossos próprios jogos
+
+
+## O que este projeto fará?
+Para este projeto serão exercitados herança de classes, splitting, orientação a objetos, classes e o uso do módulo Turtle e suas classes para criação de jogos clássicos. Com todos os projetos feitos até agora, é perfeitamente factível.
+
+### Orientação
+Felizmente, hoje existe o chatgpt, então se você precisa saber como fazer cada parte, pegue os códigos dentro dos arquivos, jogue no chatgpt e ele te explicará detalhadamente, porém tente fazer você mesmo! estude as aulas, estude os objetos, estude o módulo da tartaruga e entenda como você pode jogar o jogo da cobra.
+
+Inicialmente você vai precisar criar 3 objetos tartarugas no formato de quadrados e posicioná-los um atrás do outro para assumir o formato da cobra, não esqueça de desenhar um tamanho de canvas legal, neste caso usei 600x600, e coloquei preto no fundo e branco nos 3 quadrados. Depois, você precisará fazer os 3 objetos se moverem, eles serão a cobra, e para isso fiz a função que fará a cobra se mover dentro de um tempo, então ela sempre continuará se movendo até o tempo que o jogador perder; para treinar classes e objetos, joguei as funções de movimento da cobra e os quadrados criados para representá-la dentro do arquivo [snake.py](snake.py), se você se confundir com a lógica usada, pergunte a uma inteligência artificial. Então programei os pressionamentos de botões, algo que já vimos no projeto 19, e eles vão invocar funções dentro da classe Snake para mudar a direção do primeiro quadrado (note que, graças à função de movimento dentro da classe, os outros blocos seguirão o primeiro, então só precisamos mudar o primeiro), e também garanti que o usuário não conseguiria fazer a cobra virar na direção oposta, para isso eu só precisava de um IF.
+
+### Próximos passos
+Faça um sistema de colisão com a comida para aumentá-la em um quadrado, depois crie um painel, depois um sistema de colisão com a parede para o usuário perder e por último um sistema de colisão para os quadrados que formam a cobra para que o usuário perca também ( como você já sabe, você sempre perde neste jogo, seu objetivo é sempre tentar quebrar seu recorde).
+Lembre-se que para herdar uma classe, precisamos criar uma classe, e na nova classe que irá herdá-la, referenciá-la.
+Exemplo
+```
+teste de classe:
+    def __init__(self):
+        ...
+
+class second(Test): # esta classe herdará a classe Test
+    def __init__(self):
+        super().__init__()
+        ...
+```
+Usaremos classes herdadas para criar uma classe apenas para a comida da cobra que herdará alguns métodos e atributos da classe Tartaruga para agilizar nosso trabalho.
+
+Para o Scoreboard, usaremos o método write da classe Turtle e faremos isso em outra nova classe chamada scoreboard.py que também seguirá o modelo de classe herdado.
+
+
+
+## [Script Principal](main.py)
+
+### Descrição:
+
+Este script orquestra o jogo Snake. Ele inicializa a janela do jogo, gerencia as entradas do usuário, verifica as condições de finalização do jogo e atualiza o jogo em intervalos regulares.
+
+### Características:
+
+- **Controles responsivos:** Use `W`, `A`, `S`, `D` para o movimento.
+- **Consumo de Alimentos:** A cobra pode comer alimentos que a ajudam a crescer.
+- **Placar Dinâmico:** Mantém o controle de sua pontuação atual.
+- **Condições de fim de jogo:** termina o jogo se a cobra colidir com os limites do jogo ou com ela mesma.
+
+## Arquivos Adicionais:
+
+1. **[Snake Script snake.py)](snake.py):**
+   - Define o corpo da cobra, seu movimento e a forma como ela cresce.
+   - Controla a direção e lógica para estender a cobra.
+
+2. **[Food Script (food.py)](food.py):**
+   - Representa o objeto de comida no jogo.
+   - Gera comida em posições aleatórias dentro do limite do jogo.
+
+3. **[Scoreboard Script (scoreboard.py)](scoreboard.py):**
+   - Gerencia e exibe a pontuação atual.
+   - Exibe "Game Over" nas condições de finalização do jogo.
+
+   ## Jogabilidade:
+
+1. Execute o script `main.py`.
+2. Controle a cobra usando as teclas `W`, `A`, `S`, `D`.
+3. Tente comer a comida (círculo azul). Cada vez que você come, sua pontuação aumenta e a cobra cresce mais.
+4. Evite correr para o limite do jogo e a própria cobra.
+5. Procure alcançar a maior pontuação possível!
+
+## Requisitos:
+
+- Pitão
+- Módulo Turtle (Padrão em Python)
+
+## Melhorias Futuras:
+
+- Melhore a interface do usuário para uma experiência de usuário mais envolvente.
+- Introduzir vários níveis de dificuldade.
+- Implemente recursos adicionais como power-ups ou obstáculos.
