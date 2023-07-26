@@ -1,8 +1,8 @@
 from turtle import Turtle, Screen, done
 from player import Players
-#import player1
-#import player2
+from ball import Ball
 from scoreboard import Scoreboard
+from random import randint
 
 # definitions of screen
 screen = Screen()
@@ -16,6 +16,7 @@ line.speed("fastest")
 line.goto(0, 215)
 line.setheading(270)
 line.pencolor("white")
+screen.update()
 for i in range(0, 15): # it will cover all the mid center in screen necessary to see
     line.pensize(5)
     line.forward(15)
@@ -36,6 +37,9 @@ screen.listen()
 
 
 
+# ball
+
+
 # scoreboard options
 score1=Scoreboard(1)
 score1.show_score()
@@ -43,4 +47,21 @@ score1.show_score()
 score2=Scoreboard(2)
 score2.show_score()
 
+# ball options
+ball = Ball()
+game_is_on = True
+while game_is_on:
+    screen.update()
+    ball.move()
+
+
+    # Colision with players
+    if player1.segments[0].distance(ball)<15 or player1.segments[1].distance(ball)<15 or player1.segments[2].distance(ball)<15: #if snake.head.distance(food) < 15:
+        ball.setheading(180)
+
+    if player2.segments[0].distance(ball)<15 or player2.segments[1].distance(ball)<15 or player2.segments[2].distance(ball)<15: #if snake.head.distance(food) < 15:
+        ball.setheading(180)
+
+    if ball.ycor()> 190 or ball.ycor()< -190: # width=800, height=450
+        ball.saltar()
 done()
