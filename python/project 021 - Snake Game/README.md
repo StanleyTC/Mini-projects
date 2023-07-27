@@ -77,11 +77,6 @@ This script orchestrates the Snake game. It initializes the game window, manages
 - Python
 - Turtle Module (Standard in Python)
 
-## Future Improvements:
-
-- Enhance the UI for a more engaging user experience.
-- Introduce varying levels of difficulty.
-- Implement additional features like power-ups or obstacles.
 
 
 # Jogo Arcade da Cobrinha
@@ -155,11 +150,5 @@ Este script orquestra o jogo Snake. Ele inicializa a janela do jogo, gerencia as
 
 ## Requisitos:
 
-- Pitão
+- Python
 - Módulo Turtle (Padrão em Python)
-
-## Melhorias Futuras:
-
-- Melhore a interface do usuário para uma experiência de usuário mais envolvente.
-- Introduzir vários níveis de dificuldade.
-- Implemente recursos adicionais como power-ups ou obstáculos.
