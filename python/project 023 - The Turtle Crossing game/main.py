@@ -58,8 +58,6 @@ def blocksAndTimmy(level, score):
                 
     return level
 
-                
-        
 
 
     
@@ -69,6 +67,7 @@ while game_on ==1:
     if gamestatus != -1:
         level = gamestatus
     if gamestatus == -1:
+        score.game_over()
         game_on = 0
         break
         

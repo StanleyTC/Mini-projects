@@ -15,7 +15,7 @@ class Blocks(Turtle):
         self.shape("square")
         self.shapesize(1, 3)
         self.goto(320, self.posY)
-        colors = ["red", "blue", "darkblue", "yellow", "pink", "purple", "black", "orange", "red"]
+        colors = ["red", "blue", "darkblue", "yellow", "pink", "purple", "orange", "red"]
         self.color(choice(colors))
         self.showturtle()
         
