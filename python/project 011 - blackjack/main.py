@@ -102,4 +102,3 @@ else:
     else:
         lost()
     
-# yes... I could use functions

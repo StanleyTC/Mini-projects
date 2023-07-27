@@ -23,3 +23,26 @@ Bring back your childhood memories with this digital version of the classic Etch
 To execute the game, run [Etch-A-Sketch.py](Etch-A-Sketch.py).
 
 
+# Etch-A-Sketch e Turtle Race Game
+
+## Jogo Etch-A-Sketch
+Continuando a explorar a biblioteca de tartarugas que usamos no projeto 18, a ideia agora é construir dois pequenos projetos: um jogo de corrida entre tartarugas e um jogo de etch-a-sketch.
+o objetivo é treinar o uso de uma função sendo enviada como parâmetro para outra função, e para isso não usamos os parênteses () é essa segunda função, apenas o nome da função
+
+
+
+## [Etch-A-Sketch](Etch-A-Sketch.py)
+
+### Descrição:
+
+Traga de volta suas memórias de infância com esta versão digital do clássico brinquedo Etch-A-Sketch. Use o teclado para controlar os movimentos e esboços da tartaruga!
+
+### Como jogar:
+
+- `W`: Mova a tartaruga para frente.
+- `S`: Mova a tartaruga para trás.
+- `A`: Gire a tartaruga no sentido anti-horário.
+- `D`: Gire a tartaruga no sentido horário.
+- `C`: Limpa o desenho e reseta a tartaruga.
+
+Para executar o jogo, execute [Etch-A-Sketch.py](Etch-A-Sketch.py).

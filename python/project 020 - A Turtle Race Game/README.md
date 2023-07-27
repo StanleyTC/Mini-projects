@@ -30,3 +30,36 @@ To start the race, run [Turtle-Race-Game.py](Turtle-Race-Game.py).
 
 - Python installed.
 - modules turtle and random
+
+# Jogo de Corrida de Tartarugas
+## [Turtle Race Game](Turtle-Race-Game.py)
+
+Este jogo nos ajudará a entender sobre classes e objetos: Timmy até agora era um objeto da classe tartaruga, objetos seriam níveis individuais de uma "espécie" que chamamos de classe: Sua caneta bic azul é um objeto da "espécie "caneta, ou seja, da classe caneta.
+A partir disso, podemos criar mais de um indivíduo que seria nosso objeto: teremos outras tartarugas além do timmy: tommy, alice, bob, anna, jimmy, jack. Cada um terá sua própria cor
+
+### Descrição:
+
+Faça suas apostas! Escolha sua tartaruga favorita com base em sua cor e observe-a correr até a linha de chegada.
+
+### Como jogar:
+
+1. Após a execução, um aviso solicitará que você aposte em uma cor de tartaruga.
+2. Veja como as tartarugas correm pela tela.
+3. Assim que uma tartaruga cruzar a linha de chegada, você verá se sua aposta foi correta.
+
+**Tartarugas na Corrida:**
+
+- Timmy (vermelho)
+- Tommy (azul escuro)
+- Alice (Amarelo)
+- Bob (Preto)
+- Ana (Verde)
+- Jimmy (roxo)
+- Jaque (laranja)
+
+Para iniciar a corrida, execute [Turtle-Race-Game.py](Turtle-Race-Game.py).
+
+## Requisitos
+
+-Python instalado.
+- módulos tartaruga e aleatório

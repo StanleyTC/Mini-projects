@@ -17,3 +17,24 @@ The objective of this project is to practice and learn the basics of a graphical
 For the specific project, only two
 * turtle
 * random
+
+
+# O programa turtle (começando a aprender Interface Gráfica do Usuário)
+Para este programa, utilizaremos a biblioteca padrão que vem com o python chamada turtle, e importaremos a classe Turtle, onde utilizaremos a tartaruga para gerar uma tela com imagens de esferas coloridas em ordem aleatória e ordenada, formando uma espécie de quadrado 100x100, onde cada ponto de coordenada é representado por uma esfera.
+
+## Metas
+O objetivo deste projeto é praticar e aprender os fundamentos de uma interface gráfica com o usuário.
+### O que preciso aprender para este projeto?
+* Entenda sobre a documentação da biblioteca turtle, fácil de encontrar no google
+* aprender a manipular a tartaruga, saber mudar a cor dela, saber fazer ela se mover em posições aleatórias, desenhar figuras geométricas e gerar cores aleatórias para ela (google, documentação e stack overflow podem ajudar com tudo isso)
+* Aprender a fazer um espirógrafo, isso é basicamente dizer para a tartaruga fazer um círculo, e depois você diz para ela inclinar um pouco para fazer outro e assim gerar um enorme "donut" de círculos, procure no google por uma imagem de um espirógrafo, você pode mandar a tartaruga dobrar mandando ela virar pra esquerda ou direita e colocar um valor de ângulo pra ela representar, o método "for" pode te ajudar
+* Faça uma função que gere cores aleatórias, conforme presente no meu código
+
+# O que vou aprender com isso?
+* Trabalhando com classes (no caso da tartaruga)
+* Trabalhando com geração de GUI básica
+
+# Quais módulos vou precisar?
+Para o projeto específico, apenas dois
+* tartaruga
+* aleatório
