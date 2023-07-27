@@ -10,7 +10,6 @@ screen = Screen()
 screen.bgcolor("black")
 screen.title("Pong Game from StanleyTC") # You can put whatever name you want here
 screen.setup(width=800, height=600)
-
 screen.tracer(0)
 # mid line definitions
 line = Turtle()
