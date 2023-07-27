@@ -33,6 +33,7 @@ A traditional word-guessing game where you aim to figure out the hidden word by 
 - Python
 
 
+# Jogo da Forca
 
 Teste seu vocabulário com o clássico jogo da forca! Esta versão de linha de comando oferece uma experiência desafiadora e divertida, completa com representações visuais de cada estágio do jogo.
 Este projeto envolve a criação do clássico jogo de lápis e papel: o carrasco.

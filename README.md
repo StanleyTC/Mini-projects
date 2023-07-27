@@ -3,6 +3,8 @@
 
 This repository contains a variety of mini-projects implemented in Python, ranging from basic concepts to more complex implementations.
 
+(... Documentação dos 100 mini-projetos contém tradução em português BR :br: logo em seguida do conteúdo em inglês! confira lá)
+
 ## Repository Structure
 
 ```

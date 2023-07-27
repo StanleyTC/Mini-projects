@@ -39,6 +39,7 @@ Your decisions will lead to various outcomes. Some will lead to treasure, while 
 Ensure you have Python installed on your machine to run the game.
 
 
+# Mapa do Tesouro
 
 ## Descrição
 

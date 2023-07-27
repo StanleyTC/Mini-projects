@@ -33,6 +33,8 @@ To execute the application, run [PasswordGenerator.py](main.py).
 
 - Python
 
+# Gerador de senhas
+
 Gere senhas fortes e personalizadas com facilidade! Este aplicativo de linha de comando permite que você determine o número de letras, símbolos e números em sua senha, garantindo segurança e memorização.
 
 

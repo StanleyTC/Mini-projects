@@ -42,6 +42,8 @@ By mastering dictionaries, one unlocks the potential to manage and manipulate va
 - Python
 - Replit (for the `clear` function to work)
 
+# Programa de Leilão Secreto
+
 Este miniprojeto é um exemplo esplêndido que mostra o uso dos loops e dicionários `while` do Python.
 
 # [Script Principal](main.py)

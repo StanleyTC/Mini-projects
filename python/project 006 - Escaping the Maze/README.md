@@ -20,6 +20,7 @@ This project can take a whole day or even more than a day if you're a total begi
 - Access the link and try to solve, you don't need to install python at your computer to complete this project
 
 
+# Escapando do Labirinto
 
 Este projeto não será executado em seu computador! se tentar vai dar erro porque as funções não foram criadas. O principal que será treinado dentro desse programa com certeza é o uso de funções, estude bem isso antes de começar.
 

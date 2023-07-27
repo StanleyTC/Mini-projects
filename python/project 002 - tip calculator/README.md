@@ -27,7 +27,7 @@ Copy code
 
 Make sure you have Python installed on your machine so you can run the script.
 
-
+# Calculadora de gorjeta
 
 ## Descrição
 

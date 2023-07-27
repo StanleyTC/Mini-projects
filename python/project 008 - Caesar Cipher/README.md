@@ -46,4 +46,49 @@ By working with and studying this project, learners can deepen their understandi
 - Python
 
 
+# Ferramenta simples de criptografia e descriptografia
 
+Este é um projeto sobre uma criptografia famosa usada em muitas situações: A Cifra de César. Utilizando a antiga metodologia Caesar Cipher, este projeto fornece uma introdução fácil de entender à criptografia baseada em texto usando Python.
+
+Você continuará a fortalecer seu aprendizado em loops, listas e funções com parâmetros, então procure estudá-los bem antes de fazer este projeto.
+Resolvi não criar um arquivo separado para a arte ASCII, justamente por ser apenas uma frase, então coloquei direto no código.
+
+## [Script Principal](main.py)
+
+### Descrição:
+
+Este script engloba uma ferramenta básica que permite aos usuários criptografar um texto simples ou descriptografar uma mensagem cifrada. Dado um número de deslocamento específico, cada caractere no texto será deslocado para cima ou para baixo no alfabeto, transformando o texto simples em uma confusão ilegível ou vice-versa.
+
+### Características:
+
+- **Encrypt Text:** Converta seu texto simples em uma mensagem cifrada.
+- **Decrypt Text:** Reverte uma mensagem cifrada de volta à sua forma original.
+- **Interface amigável:** Interaja facilmente e escolha entre codificar ou decodificar texto.
+  
+## Principais conceitos abordados:
+
+Ao trabalhar e estudar este projeto, os alunos podem aprofundar sua compreensão sobre:
+
+1. **Manipulações de strings e listas:** Este projeto usa extensivamente operações de strings e listas como indexação, anexação e loop.
+   
+2. **Funções:** Encapsulamento da lógica do código em funções reutilizáveis ​​`encrypt` e `decrypt`.
+   
+3. **Declarações condicionais:** Utilização de `if`, `elif` e `else` para navegar na lógica do programa com base na entrada do usuário.
+   
+4. **Operações de entrada e saída:** receber entradas do usuário e fornecer as saídas correspondentes.
+    
+5. **Criptografia básica:** Introdução à Cifra de César - um tipo de cifra de substituição.
+    
+6. **Tratamento de erros:** Tratamento básico de entradas inesperadas do usuário.
+
+## Como usar:
+
+1. Execute o script principal.
+2. Escolha entre 'codificar' para criptografar e 'decodificar' para descriptografar.
+3. Insira o texto com o qual deseja trabalhar.
+4. Defina um número de turno. Isso determinará quantas casas cada caractere será movido para cima ou para baixo no alfabeto.
+5. Veja o resultado criptografado ou descriptografado!
+
+## Requisitos:
+
+- Python
