@@ -1,4 +1,4 @@
-from turtle import Turtle, Screen, done
+from turtle import Turtle, Screen, done, ontimer
 from player import Player
 from blocks import Blocks
 from time import sleep
@@ -8,8 +8,8 @@ import random
 screen = Screen()
 screen.setup(width=600, height=600)
 screen.bgcolor("white") # the screen will get the black color
-screen.title("Turtle Crossing game for StanleyTC")
-#screen.tracer(0)
+screen.title("Turtle Crossing game by StanleyTC")
+
 
 
 # Creating our turtle
@@ -24,11 +24,30 @@ screen.listen()
 
 
 # Blocks coming
-block=Blocks(random.randint(-230, 260))
-screen.update()
-game_on = 1
+block_list = []
+
+def createBlock():
+    block=Blocks(random.randint(-230, 260))
+    block_list.append(block)
+
+    
+
+
+
+
+    
+
+
+game_on=1
 while game_on ==1:
-    block.moving()
+    if len(block_list)<=10:
+        createBlock()
+    for block in block_list:
+        block.moving()
+        block.moving()
+        block.moving()
+        if block.xcor()< -300:
+            block_list.remove(block)
     
 
 

@@ -6,6 +6,7 @@ class Blocks(Turtle):
     def __init__(self, posicion_y):
         super().__init__()
         self.hideturtle()
+        self.speed("fastest")
         self.penup()
         self.posY = posicion_y
         self.posX = 1
