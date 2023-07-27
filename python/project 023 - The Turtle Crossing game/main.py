@@ -30,25 +30,29 @@ def createBlock():
     block=Blocks(random.randint(-230, 260))
     block_list.append(block)
 
-    
 
 
 
 
     
 
-
+counter=0
 game_on=1
 while game_on ==1:
-    if len(block_list)<=10:
+
+    
+    if len(block_list)<=30:
         createBlock()
     for block in block_list:
-        block.moving()
-        block.moving()
-        block.moving()
-        if block.xcor()< -300:
-            block_list.remove(block)
-    
+        for block in block_list:
+            block.moving()
+            if block.xcor()< -50:
+                block.clearr()
+                block_list.remove(block)
+
+
+
+
 
 
 

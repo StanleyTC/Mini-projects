@@ -9,7 +9,7 @@ class Blocks(Turtle):
         self.speed("fastest")
         self.penup()
         self.posY = posicion_y
-        self.posX = 1
+        self.posX = 10
         self.shape("square")
         self.shapesize(1, 3)
         self.goto(320, self.posY)
@@ -22,3 +22,7 @@ class Blocks(Turtle):
         x = self.xcor()-self.posX
         self.goto(x, self.posY)
     
+
+    def clearr(self):
+        self.hideturtle()  # Ocultar o bloco
+        self.goto(300, self.posY)
