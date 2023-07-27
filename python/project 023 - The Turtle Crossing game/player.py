@@ -21,3 +21,7 @@ class Player(Turtle):
     def go_down(self):
         if self.ycor()>-280:
             self.forward(-20)
+    
+
+    def resetar(self):
+        self.goto(0,-280)

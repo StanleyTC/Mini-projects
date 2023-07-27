@@ -25,22 +25,14 @@ screen.listen()
 
 # Blocks coming
 block_list = []
-
+level = 1
 def createBlock():
-    block=Blocks(random.randint(-230, 260))
+    block=Blocks(random.randint(-230, 260), level)
     block_list.append(block)
 
 
 
-
-
-    
-
-counter=0
-game_on=1
-while game_on ==1:
-
-    
+def blocksAndTimmy(level):
     if len(block_list)<=30:
         createBlock()
     for block in block_list:
@@ -50,11 +42,28 @@ while game_on ==1:
                 block.clearr()
                 block_list.remove(block)
             # Detecção de colisão
-            if abs(block.xcor() - timmy.xcor()) < 25 and abs(block.ycor() - timmy.ycor()) < 25:
-                game_on = 0
-                break
+            if abs(block.xcor() - timmy.xcor()) < 20 and abs(block.ycor() - timmy.ycor()) < 20:
+                return -1
+            if timmy.ycor() > 260:
+                sleep(1)
+                timmy.resetar()
+                level+=1
+    return level
+
+                
+        
 
 
+    
+game_on =1
+while game_on ==1:
+    gamestatus = blocksAndTimmy(level)
+    if gamestatus != -1:
+        level = gamestatus
+    if gamestatus == -1:
+        game_on = 0
+        break
+        
 
 
 
