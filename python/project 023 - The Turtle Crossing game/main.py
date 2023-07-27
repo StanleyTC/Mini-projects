@@ -46,9 +46,13 @@ while game_on ==1:
     for block in block_list:
         for block in block_list:
             block.moving()
-            if block.xcor()< -50:
+            if block.xcor()< -250:
                 block.clearr()
                 block_list.remove(block)
+            # Detecção de colisão
+            if abs(block.xcor() - timmy.xcor()) < 25 and abs(block.ycor() - timmy.ycor()) < 25:
+                game_on = 0
+                break
 
 
 
