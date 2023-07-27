@@ -34,4 +34,4 @@ If you keep going over the projects, they will become harder. lists and dicts wi
 * [project 020 - and Turtle Race Game](project%20020%20-%20A%20Turtle%20Race%20Game)
 * [project 021 - Snake Game](project%20021%20-%20Snake%20Game)
 * [project 022 - Pong Game](project%20022%20-%20Pong%20Game)
-* [project 023 - The Turtle Crossing game](project%20023%20-%20The%20TurtleCr%20ossing%20game)
+* [project 023 - The Turtle Crossing game](project%20023%20-%20The%20Turtle%20Crossing%20game)
