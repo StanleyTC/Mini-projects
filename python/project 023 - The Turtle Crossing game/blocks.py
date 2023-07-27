@@ -2,6 +2,7 @@ from turtle import Turtle
 from random import choice
 from time import sleep
 
+
 class Blocks(Turtle):
     def __init__(self, posicion_y, level):
         super().__init__()
@@ -10,7 +11,7 @@ class Blocks(Turtle):
         self.speed("fastest")
         self.penup()
         self.posY = posicion_y
-        self.posX = 10 * self.level
+        self.posX = 10 * (self.level - (self.level/2))
         self.shape("square")
         self.shapesize(1, 3)
         self.goto(320, self.posY)

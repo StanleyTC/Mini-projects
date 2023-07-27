@@ -1,6 +1,7 @@
 from turtle import Turtle, Screen, done, ontimer
 from player import Player
 from blocks import Blocks
+from scoreboard import Scoreboard
 from time import sleep
 import random
 
@@ -16,7 +17,7 @@ screen.title("Turtle Crossing game by StanleyTC")
 timmy = Player()
 
 
-# Turtle muving
+# Turtle moving
 screen.onkey(key="Up", fun=timmy.go_ahead)
 screen.onkey(key="Down", fun=timmy.go_down)
 screen.listen()
@@ -26,13 +27,18 @@ screen.listen()
 # Blocks coming
 block_list = []
 level = 1
+
+# Level
+score = Scoreboard(level)
+
+
 def createBlock():
     block=Blocks(random.randint(-230, 260), level)
     block_list.append(block)
 
 
 
-def blocksAndTimmy(level):
+def blocksAndTimmy(level, score):
     if len(block_list)<=30:
         createBlock()
     for block in block_list:
@@ -48,6 +54,8 @@ def blocksAndTimmy(level):
                 sleep(1)
                 timmy.resetar()
                 level+=1
+                score.update_score(level)
+                
     return level
 
                 
@@ -57,7 +65,7 @@ def blocksAndTimmy(level):
     
 game_on =1
 while game_on ==1:
-    gamestatus = blocksAndTimmy(level)
+    gamestatus = blocksAndTimmy(level, score)
     if gamestatus != -1:
         level = gamestatus
     if gamestatus == -1:
