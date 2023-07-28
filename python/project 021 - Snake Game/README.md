@@ -35,6 +35,7 @@ We'll use inherited classes to create a class just for the snake's food that wil
 
 For the Scoreboard we will use the write method of the Turtle class, and we'll do that in another new class called scoreboard.py that will follow the inherited class model as well.
 
+Last update: HIGHSCORE system. We created a high score system for the game, keeping the program's record above. For this, we create a function inside the scoreboard file that will update as the score is hit, and this is done through the reset() function.
 
 
 ## [Main Script](main.py)
@@ -110,6 +111,8 @@ class second(Test): # esta classe herdará a classe Test
 Usaremos classes herdadas para criar uma classe apenas para a comida da cobra que herdará alguns métodos e atributos da classe Tartaruga para agilizar nosso trabalho.
 
 Para o Scoreboard, usaremos o método write da classe Turtle e faremos isso em outra nova classe chamada scoreboard.py que também seguirá o modelo de classe herdado.
+
+Último update: sistema HIGHSCORE. Criamos um sistema de high score para o jogo, mantendo o recorde do programa encima. Para isso, criamos uma função dentro do arquivo scoreboard que atualizará conforme o score é batido, e isso é feito através da função reset().
 
 
 
