@@ -35,4 +35,4 @@ If you keep going over the projects, they will become harder. lists and dicts wi
 * [project 021 - Snake Game](project%20021%20-%20Snake%20Game)
 * [project 022 - Pong Game](project%20022%20-%20Pong%20Game)
 * [project 023 - The Turtle Crossing game](project%20023%20-%20The%20Turtle%20Crossing%20game)
-* [project 024 - the mail merge challenge](project%20024%20-%20the%20mail%20merge%20challenge)
+* [project 024 - Automatic Invitation Generator](project%20024%20-%20Automatic%20Invitation%20Generator)
