@@ -5,7 +5,10 @@ class Scoreboard(Turtle):
         super().__init__()
         self.goto(0, 260)
         self.score = 0
-        self.high_score = 0
+
+        with open("data.txt") as data:
+            self.high_score = int(data.read()) # we need to convert to integer beacuse everything it reads is string
+        
         self.color("white")
         self.updateScoreboard()
         # it will always show another turtle in the screen, so we need to hide this second turtle:
@@ -24,6 +27,10 @@ class Scoreboard(Turtle):
     def reset(self):
         if self.score > self.high_score:
             self.high_score = self.score
+            with open("data.txt", "w") as file:
+                file.write(f"{self.score}")
+            
+
         self.score = 0
         self.updateScoreboard()
 
