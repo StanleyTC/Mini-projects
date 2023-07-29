@@ -1,3 +1,2 @@
-file = open("my_text.txt")
-contents = file.read()
-print(contents)
+with open("my_text.txt", "a") as file:
+    file.write("\nteste")

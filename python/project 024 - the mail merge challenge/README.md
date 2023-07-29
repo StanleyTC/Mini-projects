@@ -1,0 +1,1 @@
+Esse módulo irá iniciar seus estudos com analise de dados em arquivos txt, então você deverá estudar como usar os métodos open, read e write para isso, além de entender sobre file paths
