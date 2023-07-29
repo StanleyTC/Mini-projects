@@ -11,6 +11,5 @@ print(content)
 
 for name in names:
     with open(f"Output/ReadyToSend/letter_for_{name}.txt", "w") as newFile:
-        content.replace("[name]", f"{name}")
-        newFile.write(content)
-        content.replace(f"{name}", "[name]")
+        newContent=content.replace("[name]", f"{name}")
+        newFile.write(newContent)

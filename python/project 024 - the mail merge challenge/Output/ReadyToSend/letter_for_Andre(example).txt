@@ -1,0 +1,10 @@
+Here you have an example when you execute the code: it will replace [name] -> Andre in first time, and then -> others names in diferent files
+
+
+
+
+Dear Andre, 
+
+You are invited to my birthday this Saturday.
+
+Hope you can make it!
