@@ -19,7 +19,8 @@ Remember that the goal is to always practice as much as you can.
 
 # Nome aleatório
 
-:brazil:
+
+
 # Nomes aleatórios
 Este projeto são os primeiros cem projetos que faremos para nos tornarmos mestres em python (portanto, é o projeto mais simples).
 Tudo o que precisamos fazer é criar um programa para gerar nomes aleatórios.
