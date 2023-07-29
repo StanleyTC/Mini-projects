@@ -1,3 +1,47 @@
+# Snake Game with High Score Record
+
+In this project, in addition to the game itself, we implemented the ability to record and display the highest score by reading and writing to a `.txt` file. Let's look at the details.
+
+## Game Structure
+
+- **main.py**: It is the main file that manages the game logic.
+- **snake.py**: Defines the structure of the snake, including movement and behavior.
+- **food.py**: Manages the food that the snake should consume.
+- **scoreboard.py**: Controls the score and high score display.
+
+## Analysis of .txt files for High Score
+
+The ability to record the high score between game sessions is implemented using basic file read and write operations in Python.
+
+### How is this done?
+
+- There is a file called `data.txt`. By default, this file contains the value `0`. Each time the game starts and the snake collides with the edges or with itself, the program checks if the current score is greater than the registered high score. If so, it updates the high score.
+
+- **High Score Reading**: At the beginning of each game, the program reads the high score from the `data.txt` file. This is done in the `Scoreboard` class:
+  ```python
+  with open("data.txt") as data:
+      self.high_score = int(data.read())
+
+The `read()` method reads the contents of the file as a string. It is then converted to an integer using `int()`.
+
+**Saving the new High Score:** If the current score is greater than the registered high score, the new score will be written to the data.txt file, replacing the previous value:
+```
+if self.score > self.high_score:
+    self.high_score = self.score
+    with open("data.txt", "w") as file:
+        file.write(f"{self.score}")
+```
+By using the practice of reading and writing files, this game becomes more interactive and challenging, as players can try to beat the high score in each new session.
+
+## How to play
+
+1. Use the W, A, S and D keys to move the snake up, left, down and right, respectively.
+2. The objective is to eat the food (represented by a blue circle). Each time the snake eats the food, it grows in size and the score increases.
+3. If the snake collides with the edges or with itself, the game will restart.
+4. Current score and high score are displayed at the top of the screen.
+
+
+
 # Snake Game com Registro de High Score
 
 Neste projeto, além do jogo em si, implementamos a capacidade de registrar e exibir a pontuação mais alta através da leitura e gravação em um arquivo `.txt`. Vamos observar os detalhes.
