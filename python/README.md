@@ -36,3 +36,4 @@ If you keep going over the projects, they will become harder. lists and dicts wi
 * [project 022 - Pong Game](project%20022%20-%20Pong%20Game)
 * [project 023 - The Turtle Crossing game](project%20023%20-%20The%20Turtle%20Crossing%20game)
 * [project 024 - Automatic Invitation Generator](project%20024%20-%20Automatic%20Invitation%20Generator)
+* [project 025 - U.S. States Game](project%20025%20-%20U.S.%20States%20Game)
