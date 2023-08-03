@@ -1,5 +1,51 @@
 # U.S. States Guessing Game
 
+## Introduction
+The "U.S. States Guessing Game" is an interactive challenge where players are prompted to name the states of the USA. Each time a player guesses correctly, the state's name is displayed on the map. If the player decides to exit or finish the game early, the unguessed states are saved to a CSV file for future review.
+
+![](blank_states_img.gif) 
+
+## Concepts Used
+
+### 1. Python Programming
+The game was developed using the Python programming language, which is widely recognized for its simplicity and ability to handle data analysis tasks.
+
+### 2. Turtle Library
+The Turtle library is used to provide an interactive graphical interface. It allows:
+- Displaying images: In this case, `blank_states_img.gif` serves as the background and represents the map of the USA.
+- Creating and managing graphical elements, such as displaying the name of the states.
+- Receiving user input through dialog boxes.
+
+### 3. Pandas for Data Analysis
+The Pandas library is an essential tool for data analysis in Python. It's used to:
+- Load data from the CSV file: The `50_states.csv` file contains the names and coordinates of the states.
+- Manipulate data: Removing guessed states from the list, filtering data based on conditions, etc.
+- Save data: The unguessed states are saved to a new CSV file (`states to learn.csv`) for review.
+
+### Game Flow
+1. The map image of the USA is loaded.
+2. The state data is loaded from the CSV file using Pandas.
+3. The player is continually prompted to guess a state.
+    - If the guess is correct, the state name is displayed on the map, and the state is removed from the list of states to guess.
+    - If the player enters "Exit", the game will end.
+4. The game ends after 50 rounds or if the player decides to exit early.
+5. The unguessed states are saved to a new CSV file for review.
+
+## How to Play
+1. Run the `main.py` file.
+2. A window with the USA map will appear.
+3. Type in the name of a state in the dialog box. If correct, the name will appear on the map.
+4. Continue guessing until all states are named or until you decide to exit.
+5. To exit before guessing all the states, type "Exit".
+6. At the end of the game, check the `states to learn.csv` file to review the states you couldn't guess.
+
+## Conclusion
+This is an educational project that is excellent for practicing the concepts seen so far from using the turtle library and now analyzing data with Pandas.
+
+
+
+# U.S. States Guessing Game
+
 ## Introdução
 O jogo "U.S. States Guessing Game" é um desafio interativo onde os jogadores são solicitados a nomear os estados dos EUA. Cada vez que um jogador adivinha corretamente, o nome do estado é mostrado no mapa. Se o jogador decidir sair ou terminar o jogo, os estados não adivinhados são salvos em um arquivo CSV para futuras revisões.
 
